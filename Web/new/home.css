@@ -1,0 +1,182 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+@font-face {
+	font-family: "Bebas";
+	src: url(../font/Bebas-Regular.ttf);
+}
+@font-face {
+	font-family: "Coolvetica";
+	src: url(../font/coolvetica\ rg.otf);
+}
+@font-face {
+	font-family: "Poppins";
+	src: url(../font/Poppins-Light.ttf);
+}
+body {
+	background-color: #fdf8e1;
+}
+header {
+	background-color: #f5f5ba;
+	width: 100%;
+	display: flex;
+	padding: 1em;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	top: 0;
+	color: #1e4f2a;
+}
+header .logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-left: 3em;
+}
+header .logo h1 {
+	font-size: 1.5em;
+	font-family: "Agency FB", arial;
+	font-weight: lighter;
+}
+header .logo img {
+	width: 20px;
+	height: 40px;
+}
+header nav {
+	display: flex;
+	gap: 60px;
+	margin-right: 3em;
+}
+header nav a {
+	font-family: "Coolvetica";
+	color: #1e4f2a;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+section#head {
+	background-color: #f5f5ba;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	background-image: url(../media/padi.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+section#head img {
+	margin: auto;
+}
+section#predict {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url(../media/padi\ kicil1.png);
+	background-size: 85%;
+	background-repeat: no-repeat;
+	background-position: center 110%;
+}
+section#predict h1 {
+	font-family: "Bebas";
+	color: #80b918;
+	font-size: 2em;
+	margin-bottom: 1em;
+}
+section#predict p {
+	font-family: "Poppins";
+	color: #a47e1b;
+	max-width: 800px;
+	width: 80%;
+	margin-bottom: 1em;
+}
+section#predict div.butt {
+	height: 100px;
+	display: flex;
+}
+section#predict button {
+	border: none;
+	color: #fdf8e1;
+	letter-spacing: 2px;
+	font-size: 1.5em;
+	text-decoration: none;
+	background-color: #80b918;
+	padding: 0.5em 1em 0.5em 1em;
+	border-radius: 0.6em;
+	border-bottom: 5px solid #2b9348;
+	font-family: "Bebas";
+	transition: 0.2s;
+	margin: auto;
+}
+section#predict button:active {
+	border: none;
+}
+section#main {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	position: relative;
+}
+section#main .content img {
+	margin-top: 10em;
+	border-radius: 3%;
+	width: 600px;
+	height: 400px;
+}
+section#main .content h1 {
+	position: absolute;
+	top: 10em;
+	left: 50%;
+	translate: -50% -50%;
+}
+section#main .content a {
+	display: flex;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #a47e1b;
+	font-family: "Poppins";
+	font-weight: bold;
+	letter-spacing: 1.5px;
+}
+section#list {
+	display: flex;
+	width: 100%;
+	font-family: "Coolvetica";
+	text-align: center;
+	color: #a47e1b;
+	margin-top: 3em;
+	justify-content: space-around;
+}
+section#list .collapse .atas p {
+	font-size: 1.4em;
+	margin-bottom: 1em;
+}
+section#list .collapse {
+	border-bottom: 8px solid #a47e1b;
+	transition: 0.2s;
+	width: 21em;
+	background: white;
+	padding: 2em;
+	margin-bottom: 2em;
+	border-radius: 1.5em;
+}
+section#list .collapse:active {
+	border: none;
+}
+section#list .collapse .bawah p {
+	margin-top: 1em;
+	text-align: justify;
+}
+section#list .collapse .bawah {
+	height: 0;
+	overflow: hidden;
+	transition: 0.5s;
+}
+section#list .collapse.open .bawah {
+	height: 505px;
+}
