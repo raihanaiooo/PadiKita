@@ -419,6 +419,111 @@ section#contact .medsos table {
 	margin-top: 5em;
 	margin-bottom: 10em;
 }
+
+section#normal-paddy .content{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	/* ##  */
+	margin: auto;
+}
+section#normal-paddy .content h1{
+	position: absolute;
+	top: 200px;
+	font-size: 2em;
+	font-family: "Bebas";
+	letter-spacing: 2px;
+	color: #80b918;
+	height: 15%;
+	padding: 30px 20px;
+	text-align: center;
+}
+section#normal-paddy .content p{
+	position: absolute;
+	top: 300px;
+	font-family: "Poppins";
+	width: 50%;
+	text-align: center;
+}
+section#normal-paddy .ciri{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	/* ##  */
+	margin: auto;
+}
+section#normal-paddy .ciri .ciri1{
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 420px;
+	margin-bottom: 20px;
+}
+section#normal-paddy .ciri .ciri1 p{
+	top: 300px;
+	font-family: "Poppins";
+	width: 30%;
+	text-align: left;
+}
+section#normal-paddy .ciri .ciri1 img{
+	border-radius: 10px;
+}
+section#normal-paddy .ciri .ciri2{
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 670px;
+	margin-bottom: 20px;
+}
+section#normal-paddy .ciri .ciri2 p{
+	top: 300px;
+	font-family: "Poppins";
+	width: 30%;
+	text-align: left;
+}
+section#normal-paddy .ciri .ciri2 img{
+	border-radius: 10px;
+}
+section#normal-paddy .ciri .ciri3{
+	position: absolute;
+	display: flex;
+	justify-content: space-around;
+	top: 940px;
+	bottom: 30px;
+	margin-bottom: 20px;
+}
+section#normal-paddy .ciri .ciri3 p{
+	top: 300px;
+	font-family: "Poppins";
+	width: 30%;
+	text-align: left;
+}
+section#normal-paddy .ciri .ciri3 img{
+	border-radius: 10px;
+}
+section#normal-paddy .tabel-gizi{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	/* ##  */
+	margin: auto;
+}
+section#normal-paddy .tabel-gizi h1{
+	position: absolute;
+	top: 1350px;
+	font-size: 2em;
+	font-family: "Bebas";
+	letter-spacing: 2px;
+	color: #80b918;
+	height: 15%;
+	padding: 30px 20px;
+	text-align: center;
+}
 footer {
 	display: flex;
 	width: 100%;
