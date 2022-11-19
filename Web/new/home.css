@@ -21,6 +21,22 @@
 	font-family: "Bebas Neue";
 	src: url(../font/BebasNeue-Regular.otf);
 }
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #1e4f2a;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #a47e1b;
+	max-width: 800px;
+    border-radius: 10px;
+}
+
 body {
 	/* ###  */
 	overflow-x: hidden;
@@ -139,6 +155,7 @@ section#predict button {
 	font-family: "Bebas";
 	transition: 0.2s;
 	margin: auto;
+	cursor: pointer;
 }
 section#predict button:active {
 	border: none;
@@ -511,6 +528,11 @@ footer h1 {
 	}
 	section#framing .items > div {
 		font-size: 1.4em;
+	}
+	section#contact .medsos table {
+		width: 500px;
+		margin-top: 5em;
+		margin-bottom: 10em;
 	}
 	footer h2.isi {
 		width: 90%;
