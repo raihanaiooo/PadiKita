@@ -362,7 +362,7 @@ section#list .collapse.open .bawah {
 section#contact {
 	display: flex;
 	width: 100%;
-	min-height: 80vh;
+	min-height: 10vh;
 	font-family: "Coolvetica";
 	text-align: center;
 	color: #a47e1b;
@@ -377,6 +377,7 @@ section#contact h1 {
 	font-family: "Bebas Neue";
 	color: #80b918;
 	font-size: 2.5em;
+	margin-top: 3em;
 	font-weight: lighter;
 }
 section#contact p {
@@ -391,13 +392,54 @@ section#contact .medsos a {
 	display: block;
 	font-family: "Poppins";
 }
+section#contact span {
+	color: black;
+}
 section#contact .medsos img {
 	width: 40%;
 }
 section#contact .medsos table {
-	margin-top: 10em;
+	margin-top: 5em;
+	margin-bottom: 10em;
+}
+footer {
+	display: flex;
+	width: 100%;
+	font-family: "Coolvetica";
+	text-align: center;
+	background-color: #f5f5ba;
+	/* ##  */
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	/* ##  */
+	margin-top: 7em;
+}
+footer .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	margin-top: 30px;
+	margin-bottom: 5em;
+}
+footer h2 {
+	margin-bottom: 3em;
+	font-family: "Poppins";
+	color: #a47e1b;
+	text-align: center;
+	width: 800px;
+}
+footer h1 {
+	font-size: 3em;
+	font-family: "Agency FB", arial;
+	font-weight: lighter;
+	color: #80b918;
+	/* ##  */
+	white-space: nowrap;
 }
 /* MEDIA QUERIES AWOKAWOK  */
+/* table blm responsive */
 @media only screen and (max-width: 768px) {
 	header .logo {
 		margin-left: 0;
@@ -469,5 +511,8 @@ section#contact .medsos table {
 	}
 	section#framing .items > div {
 		font-size: 1.4em;
+	}
+	footer h2.isi {
+		width: 90%;
 	}
 }
