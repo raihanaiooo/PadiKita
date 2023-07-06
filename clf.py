@@ -7,6 +7,8 @@ from torchvision import models
 import cv2
 import numpy
 
+from PIL import Image
+
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
