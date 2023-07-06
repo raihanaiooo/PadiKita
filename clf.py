@@ -68,7 +68,7 @@ def predict(image_path):
     ])
     print(image_path)
     image_pil = Image.open(image_path)
-    image_np = np.array(image_pil)
+    image_np = numpy.array(image_pil)
     img = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
     # img = cv2.imread(image_path)[:, :, ::-1]  # BGR to RGB
     img = val_transforms(image=img)['image'] # apply same transforms of validation set
