@@ -64,8 +64,11 @@ def predict(image_path):
         A.Normalize(mean=(0.485, 0.456, 0.406), std=(0.229, 0.224, 0.225)),
         ToTensorV2(),
     ])
-
-    img = cv2.imread(image_path)[:, :, ::-1]  # BGR to RGB
+    print(image_path)
+    image_pil = Image.open(image_path)
+    image_np = np.array(image_pil)
+    img = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
+    # img = cv2.imread(image_path)[:, :, ::-1]  # BGR to RGB
     img = val_transforms(image=img)['image'] # apply same transforms of validation set
     img = img[None, ...].to(CFG['device']) # add batch dimension to image and use device
     # predict 
