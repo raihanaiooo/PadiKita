@@ -4,7 +4,7 @@ from clf import predict
 
 st.set_option('deprecation.showfileUploaderEncoding', False)
 
-st.title("\n\nPadiKita Prediction")
+st.title("\n\n\nPadiKita [Prototype Prediction]")
 st.write("")
 
 file_up = st.file_uploader("Upload an image", type=["jpg", "png"])
